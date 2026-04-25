@@ -1,0 +1,179 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Engineering Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Base Dark Theme Variables */
+        :root {
+            --bg-color: #121212;
+            --surface-color: #1e1e1e;
+            --text-main: #e0e0e0;
+            --text-muted: #a0a0a0;
+            --accent-color: #00e5ff; /* Cyan accent */
+            --accent-hover: #00b8cc;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        header {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(180deg, #1a1a1a 0%, var(--bg-color) 100%);
+            border-bottom: 1px solid #333;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        header h1 span {
+            color: var(--accent-color);
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 20px auto 0;
+            font-weight: 300;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            border-bottom: 2px solid var(--surface-color);
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        /* Project Grid System */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        /* Individual Project Cards */
+        .project-card {
+            background-color: var(--surface-color);
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #333;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+            box-shadow: 0 10px 20px rgba(0, 229, 255, 0.05);
+        }
+
+        .project-card h3 {
+            margin-top: 0;
+            color: var(--text-main);
+            font-size: 1.3rem;
+        }
+
+        .project-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Tags for skills used */
+        .tags {
+            margin-top: 15px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background-color: rgba(0, 229, 255, 0.1);
+            color: var(--accent-color);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid #333;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Hello, I'm <span>Shrenik</span></h1>
+        <p>A second-semester engineering student specializing in C/C++ programming, embedded systems, and building solutions for the real world.</p>
+    </header>
+
+    <div class="container">
+        <h2>Featured Projects</h2>
+        
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Arduino Joystick-Controlled Car</h3>
+                <p>Designed and programmed a remote-controlled vehicle utilizing servo motors and ultrasonic sensors for navigation and obstacle detection.</p>
+                <div class="tags">
+                    <span class="tag">Arduino</span>
+                    <span class="tag">C++</span>
+                    <span class="tag">Robotics</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Rural Infrastructure Field Survey</h3>
+                <p>Conducted an analytical survey in Donthanpalle village to identify gaps in road quality, water supply, and digital connectivity.</p>
+                <div class="tags">
+                    <span class="tag">Data Analysis</span>
+                    <span class="tag">Field Research</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Data Structures & Algorithms</h3>
+                <p>Implemented and debugged complex algorithms including pointer-based memory management, selection sort, and binary search.</p>
+                <div class="tags">
+                    <span class="tag">C</span>
+                    <span class="tag">Algorithms</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Built and hosted with GitHub Pages &bull; 2026</p>
+    </footer>
+
+</body>
+</html>
